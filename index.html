@@ -32,10 +32,95 @@
 	.round-border{
 		border-radius: 50%;
 	}
+
+	*, #content :first-child, #content :last-child {
+			margin: 0;
+		}
+
+	nav ul {
+			list-style: none;
+			padding: 0 0 0 10px;
+			min-width: 460px;
+		}
+
+		nav li {
+			float: left;
+			position: relative;
+			height: 30px;
+			border-radius: 10px 30px 0 0;
+			margin-left: -10px;
+			text-shadow: 1px 1px 0 #bbb;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+			transition: .2s;
+		}
+        
+		nav a {
+			display: block;
+			position: relative;
+			width: 90px;
+			height: 20px;
+			padding: 6px 10px 20px 0;
+			border-radius: 10px 30px 0 0;
+			background: #1E90FF;
+			color: #FFF;
+			text-align: center;
+			text-decoration: none;
+			transition: .2s;
+		}
+
+		nav li:hover {
+			z-index: 1;
+		}
+
+		nav li:hover a {
+			background: #00FFFF;
+			color: #FFF;
+		}
+
+		#selected {
+			z-index: 2;
+		}
+
+		#selected a {
+			z-index: 3;
+			background: #7FFFD4;
+			color: #FFFFFF;
+			text-shadow: #00FFFF;
+			font-weight: 500;
+		}
+
+		#content {
+			position: relative;
+			z-index: 1;
+			clear: both;
+			min-width: 420px;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+			background: #fff;
+		}
+
+		#content p {
+			margin: 20px 0;
+		}
 </style>
 <body>
 	<center><img class="smaller-image round-border" src="sambur.jpg" alt="Samantha Burnett" ></center>
 	<h1>Samantha Burnett</h1>
 	<h2>Never a failure, Always A Lesson</h2>
+
+	<nav>
+		<ul>
+			<li id="selected"><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Portflio</a></li>
+			<li><a href="">Resume</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</nav>
+
+	<section id="content">
+		<p>This is my homepage.</p>
+	</section>
 </body>
 </html>
