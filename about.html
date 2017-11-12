@@ -38,44 +38,35 @@
 		}
 
 	nav ul {
-		/*list-style: none;
-		padding: 0 0 0 10px;
-		min-width: 460px;*/
-		margin:  0;
-		padding: 0;
-	    list-style: none;
-	    display: table; /* [1] */
-	    table-layout: fixed; /* [2] */
-	    width: 100%; /* [3] */
-	}
+			list-style: none;
+			padding: 0 0 0 10px;
+			min-width: 460px;
+		}
 
-	nav li {
-		/*float: left;*/
-		position: relative;
-		height: 30px;
-		border-radius: 10px 30px 0 0;
-		margin-left: -10px;
-		text-shadow: 1px 1px 0 #bbb;
-		box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-		transition: .2s;
-		display: table-cell;
-	}
+		nav li {
+			float: left;
+			position: relative;
+			height: 30px;
+			border-radius: 10px 30px 0 0;
+			margin-left: -10px;
+			text-shadow: 1px 1px 0 #bbb;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+			transition: .2s;
+		}
         
-	nav a {
-		display: block;
-		position: relative;
-		width: 90px;
-		height: 20px;
-		padding: 6px 255px 20px 0;
-		border-radius: 10px 30px 0 0;
-		background: #1E90FF;
-		color: #FFF;
-		text-align: center;
-		text-decoration: none;
-		font-size: 150%;
-		font-family: 'Bellefair', Monospace;
-		transition: .2s;
-	}
+		nav a {
+			display: block;
+			position: relative;
+			width: 90px;
+			height: 20px;
+			padding: 6px 10px 20px 0;
+			border-radius: 10px 30px 0 0;
+			background: #1E90FF;
+			color: #FFF;
+			text-align: center;
+			text-decoration: none;
+			transition: .2s;
+		}
 
 		nav li:hover {
 			z-index: 1;
@@ -111,10 +102,6 @@
 
 		#content p {
 			margin: 20px 0;
-			color: #1F45FC;
-			text-align: center;
-			font-family: 'Bellefair', Monospace;
-			font-size: 120%
 		}
 </style>
 <body>
@@ -124,7 +111,8 @@
 
 	<nav>
 		<ul>
-			<li id="selected"><a>Home</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li id="selected"><a>About</a></li>
 			<li><a href="portfolio.html">Portflio</a></li>
 			<li><a href="resume.html">Resume</a></li>
 			<li><a href="contact.html">Contact</a></li>
@@ -132,10 +120,7 @@
 	</nav>
 
 	<section id="content">
-		<p>My name is Samantha Burnett.</p> 
-		<p>I currently attend Lehman College.</p> 
-	    <p>I am pursuing my Bachelor of Science in Computer Science.</p>
-	    <p>In the future I will be a software engineer.</p>
+		<p>This is my homepage.</p>
 	</section>
 </body>
 </html>
